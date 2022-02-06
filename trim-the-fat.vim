@@ -1,7 +1,7 @@
-function! s:TrimTheFatss()
+function! TrimTheFat()
     execute "normal! mz"
     %s/\s\+$//ge
     execute "normal! 'z"
 endfunction
 
-command! TrimTheFats call s:TrimTheFatss()
+command! TrimTheFat call TrimTheFat()
